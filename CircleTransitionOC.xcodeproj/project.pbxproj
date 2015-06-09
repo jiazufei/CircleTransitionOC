@@ -14,6 +14,10 @@
 		E8D295991B26D81800CA78C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D295981B26D81800CA78C8 /* Images.xcassets */; };
 		E8D2959C1B26D81800CA78C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8D2959A1B26D81800CA78C8 /* LaunchScreen.xib */; };
 		E8D295A81B26D81800CA78C8 /* CircleTransitionOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D295A71B26D81800CA78C8 /* CircleTransitionOCTests.m */; };
+		E8D295B31B26D83900CA78C8 /* ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8D295B11B26D83900CA78C8 /* ipad.jpg */; };
+		E8D295B41B26D83900CA78C8 /* iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8D295B21B26D83900CA78C8 /* iphone.jpg */; };
+		E8D295B71B26E21D00CA78C8 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D295B61B26E21D00CA78C8 /* NavigationControllerDelegate.m */; };
+		E8D295BA1B26E49700CA78C8 /* CircleTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D295B91B26E49700CA78C8 /* CircleTransitionAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		E8D295A11B26D81800CA78C8 /* CircleTransitionOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleTransitionOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D295A61B26D81800CA78C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8D295A71B26D81800CA78C8 /* CircleTransitionOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleTransitionOCTests.m; sourceTree = "<group>"; };
+		E8D295B11B26D83900CA78C8 /* ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipad.jpg; sourceTree = "<group>"; };
+		E8D295B21B26D83900CA78C8 /* iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone.jpg; sourceTree = "<group>"; };
+		E8D295B51B26E21D00CA78C8 /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		E8D295B61B26E21D00CA78C8 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		E8D295B81B26E49700CA78C8 /* CircleTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTransitionAnimator.h; sourceTree = "<group>"; };
+		E8D295B91B26E49700CA78C8 /* CircleTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTransitionAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,12 @@
 				E8D295901B26D81800CA78C8 /* AppDelegate.m */,
 				E8D295921B26D81800CA78C8 /* ViewController.h */,
 				E8D295931B26D81800CA78C8 /* ViewController.m */,
+				E8D295B51B26E21D00CA78C8 /* NavigationControllerDelegate.h */,
+				E8D295B61B26E21D00CA78C8 /* NavigationControllerDelegate.m */,
+				E8D295B81B26E49700CA78C8 /* CircleTransitionAnimator.h */,
+				E8D295B91B26E49700CA78C8 /* CircleTransitionAnimator.m */,
+				E8D295B11B26D83900CA78C8 /* ipad.jpg */,
+				E8D295B21B26D83900CA78C8 /* iphone.jpg */,
 				E8D295951B26D81800CA78C8 /* Main.storyboard */,
 				E8D295981B26D81800CA78C8 /* Images.xcassets */,
 				E8D2959A1B26D81800CA78C8 /* LaunchScreen.xib */,
@@ -200,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D295971B26D81800CA78C8 /* Main.storyboard in Resources */,
+				E8D295B31B26D83900CA78C8 /* ipad.jpg in Resources */,
+				E8D295B41B26D83900CA78C8 /* iphone.jpg in Resources */,
 				E8D2959C1B26D81800CA78C8 /* LaunchScreen.xib in Resources */,
 				E8D295991B26D81800CA78C8 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D295B71B26E21D00CA78C8 /* NavigationControllerDelegate.m in Sources */,
 				E8D295941B26D81800CA78C8 /* ViewController.m in Sources */,
 				E8D295911B26D81800CA78C8 /* AppDelegate.m in Sources */,
 				E8D2958E1B26D81800CA78C8 /* main.m in Sources */,
+				E8D295BA1B26E49700CA78C8 /* CircleTransitionAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
