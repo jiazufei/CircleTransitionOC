@@ -72,7 +72,11 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFL-rm-MbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="oDO-a5-p81" customClass="NavigationControllerDelegate"/>
+                <customObject id="oDO-a5-p81" customClass="NavigationControllerDelegate">
+                    <connections>
+                        <outlet property="navigationController" destination="UG4-X8-yh2" id="qXl-yV-xsf"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-218" y="-320"/>
         </scene>
