@@ -30,13 +30,16 @@
     //
     //  4.创建两个圆形UIBezierPath实例：一个是按钮的尺寸，一个实例的半径范围可覆盖整个屏幕。最终的动画将位于这两个Bezier路径间。
     UIBezierPath * circleMaskPathInitial = [UIBezierPath bezierPathWithOvalInRect:button.frame];
+    
+    
     CGPoint extremePoint = CGPointMake(button.center.x - 0, button.center.y - CGRectGetHeight(toViewController.view.bounds));
-//    double radius = sqrt((extremePoint.x*extremePoint.x) + (extremePoint.y*extremePoint.y));
+    
+    CGFloat radius = sqrt((extremePoint.x*extremePoint.x) + (extremePoint.y*extremePoint.y));
+    
+    
     UIBezierPath * circleMaskPathFinal = [UIBezierPath bezierPathWithOvalInRect:CGRectInset(button.frame,
-                                                                                            -sqrt((extremePoint.x*extremePoint.x) + (extremePoint.y*extremePoint.y)),
-                                                                                            -sqrt((extremePoint.x*extremePoint.x) + (extremePoint.y*extremePoint.y)))];
-    
-    
+                                                                                            -radius,
+                                                                                            -radius)];
     //
     //  5.创建一个新的CAShapeLayer来展示圆形遮罩。你可以在动画之后使用最终的循环路径指定其路径值，以避免图层在动画完成后回弹。
     CAShapeLayer * maskLayer = [CAShapeLayer new];
@@ -46,8 +49,8 @@
     //
     //  6.在关键路径上创建一个CABasicAnimation，从circleMaskPathInitial到circleMaskPathFinal.你也要注册一个委托，因为你要在动画完成后做一些清理工作。
     CABasicAnimation * maskLayerAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
-    maskLayerAnimation.fromValue = (__bridge id)(circleMaskPathInitial.CGPath);
-    maskLayerAnimation.toValue = (__bridge id)(circleMaskPathFinal.CGPath);
+    maskLayerAnimation.fromValue = (__bridge id)((circleMaskPathInitial.CGPath));
+    maskLayerAnimation.toValue = (__bridge id)((circleMaskPathFinal.CGPath));
     maskLayerAnimation.duration = [self transitionDuration:transitionContext];
     maskLayerAnimation.delegate = self;
     [maskLayer addAnimation:maskLayerAnimation forKey:@"path"];

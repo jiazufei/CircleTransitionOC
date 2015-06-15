@@ -12,5 +12,6 @@
 #import "ViewController.h"
 @interface CircleTransitionAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
-@property(weak)id <UIViewControllerContextTransitioning> transitionContext;
+@property(nonatomic,weak)id <UIViewControllerContextTransitioning> transitionContext;
+
 @end

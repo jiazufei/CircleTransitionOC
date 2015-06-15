@@ -36,19 +36,10 @@
                                     <segue destination="nqi-Z2-5na" kind="show" identifier="PushSegue" id="gsP-0Z-2WU"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YHT-qs-gJF">
-                                <rect key="frame" x="150" y="31" width="300" height="538"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="feD-OK-VjR"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="YHT-qs-gJF" secondAttribute="centerX" id="ERL-ss-bwX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rEZ-ir-Krt" secondAttribute="trailing" constant="10" id="HNg-cV-6dY"/>
-                            <constraint firstAttribute="centerY" secondItem="YHT-qs-gJF" secondAttribute="centerY" id="L6a-a3-TQE"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="YHT-qs-gJF" secondAttribute="bottom" constant="31" id="T72-9y-DZ4"/>
                             <constraint firstItem="rEZ-ir-Krt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="jSP-3r-G92"/>
                         </constraints>
                     </view>
@@ -111,19 +102,10 @@
                                     <action selector="circleTapped:" destination="nqi-Z2-5na" eventType="touchUpInside" id="uZB-7e-NhY"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wKH-aQ-A7a">
-                                <rect key="frame" x="150" y="71" width="300" height="458"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="umg-1P-fd9"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="83Q-di-iD8" firstAttribute="top" secondItem="wKH-aQ-A7a" secondAttribute="bottom" constant="71" id="4gh-dd-WBi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ufX-sf-MuK" secondAttribute="trailing" constant="10" id="7ko-tn-8z9"/>
-                            <constraint firstAttribute="centerX" secondItem="wKH-aQ-A7a" secondAttribute="centerX" id="HMC-sY-geL"/>
-                            <constraint firstAttribute="centerY" secondItem="wKH-aQ-A7a" secondAttribute="centerY" id="KeF-P2-hv1"/>
                             <constraint firstItem="ufX-sf-MuK" firstAttribute="top" secondItem="Atn-2Q-som" secondAttribute="bottom" constant="10" id="pcj-cp-2un"/>
                         </constraints>
                     </view>
@@ -136,8 +118,4 @@
             <point key="canvasLocation" x="1208" y="-310"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ipad.jpg" width="984" height="562"/>
-        <image name="iphone.jpg" width="1200" height="1200"/>
-    </resources>
 </document>
